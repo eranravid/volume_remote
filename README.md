@@ -1,2 +1,2 @@
 # volume_remote
-Remote controller to control your PC volume from a phone app
+This is a NodeJS + Unity Remote controller App to control your PC's volume from a phone app
