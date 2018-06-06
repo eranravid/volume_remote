@@ -1,7 +1,7 @@
 const http = require('http');
 const exec = require('child_process').exec;
-const hostname = '10.0.0.1';
-const port = 8006;
+const hostname = '127.0.0.1';
+const port = 1337;
 var volSteps = 1911;
 
 
@@ -51,9 +51,9 @@ function addVolume() {
 
 function renderHTML() {
 	return (`
-		<button onClick="addVolume()">add + 5</button>
-		<button onClick="reduceVolume()">add - 5</button>
-		
+		<!-- <button onClick="addVolume()">add + 5</button> -->
+		<!-- <button onClick="reduceVolume()">add - 5</button> -->
+		Controll the volume using the querystrings parameters. example: 127.0.0.1:1337/?method=add&vol=5  or  127.0.0.1:1337/?method=set&vol=25
 		`);
 }
 
